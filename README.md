@@ -2,6 +2,8 @@
 
 > En skadereduserende veiledning til deg som vurderer å ta MDMA eller psykedelia 
 
+[Tryggtripp.no](https://tryggtripp.no/) 
+
 ## Build Setup
 
 ``` bash
