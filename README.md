@@ -1,4 +1,4 @@
-# rusvett
+# Tryggtripp.no
 
 > En skadereduserende veiledning til deg som vurderer å ta MDMA eller psykedelia 
 
