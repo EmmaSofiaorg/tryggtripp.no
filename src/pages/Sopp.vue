@@ -171,7 +171,7 @@
             <br>
             <a href="http://www.rusopplysningen.no/">Rusopplysningen</a>
             <br>
-            <a href="https://erowid.org/plants/mushrooms/mushrooms_dose.shtml/">Erowid</a>
+            <a href="https://erowid.org/plants/mushrooms/">Erowid</a>
           </p>
         </div>
       </div>
