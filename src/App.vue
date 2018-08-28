@@ -5,17 +5,16 @@
 </template>
 
 <script>
-
-import { initCart } from '@/services/shopify';
+import { initCart } from "@/services/shopify";
 
 export default {
-  name: 'app',
-  store: ['cart'],
+  name: "app",
+  store: ["cart"],
   mounted() {
-    initCart().then((newCart) => {
+    initCart().then(newCart => {
       this.cart = newCart;
     });
-  },
+  }
 };
 </script>
 

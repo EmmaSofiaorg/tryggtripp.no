@@ -1,6 +1,6 @@
 <template lang="html">
 
-  <div class="shopping-cart-button" v-if="cart.lineItemCount && !cartOpen" @click="cartOpen = true">
+  <div class="shopping-cart-button" v-if="cart && !cartOpen" @click="cartOpen = true">
     <b class="shopping-cart-text">Testkits ({{cart.lineItemCount}})</b>
     <i class="fa fa-shopping-cart text-center ml-2 mr-2" aria-hidden="true"></i>
   </div>
@@ -9,12 +9,11 @@
 
 <script>
 export default {
-  store: ['cartOpen', 'cart'],
+  store: ["cartOpen", "cart"]
 };
 </script>
 
 <style lang="scss">
-
 .shopping-cart-button {
   position: fixed;
   top: 15vh;
@@ -39,5 +38,4 @@ export default {
     display: inline-block;
   }
 }
-
 </style>

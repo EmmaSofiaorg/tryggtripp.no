@@ -1,13 +1,13 @@
 <template lang="html">
 
-<div class="shopping-cart" v-if="cart.lineItemCount" :class="{open: cartOpen}">
+<div class="shopping-cart" v-if="cart" :class="{open: cartOpen}">
   <div class="shopping-cart__close" @click="cartOpen = false">
     Lukk
   </div>
   <h2 class="text-center">Testkits ({{cart.lineItemCount}})</h2>
 
   <div class="shopping-cart__items">
-    <div class="shopping-cart__item" v-for="item in cart.lineItems">
+    <div class="shopping-cart__item" :key="item.id" v-for="item in cart.lineItems">
       <div class="shopping-cart__item-img" :style="`background-image: url(${item.image.src})`" />
       <div class="shopping-cart__item-text">
         <h4>{{item.title}}</h4>
@@ -29,18 +29,16 @@
 
 <script>
 export default {
-  store: ['cart', 'cartOpen'],
+  store: ["cart", "cartOpen"],
   methods: {
     deleteItem(itemId) {
       this.cart.removeLineItem(itemId);
-      console.log(this.cart);
-    },
-  },
+    }
+  }
 };
 </script>
 
 <style lang="scss">
-
 .shopping-cart {
   width: 90vw;
   opacity: 0;
@@ -63,11 +61,10 @@ export default {
     transform: translateX(0px);
   }
 
-  @media(min-width: 800px) {
+  @media (min-width: 800px) {
     width: 30vw;
     top: 100px;
   }
-
 }
 
 .shopping-cart__items {
@@ -109,5 +106,4 @@ export default {
 .shopping-cart.hidden {
   display: none;
 }
-
 </style>

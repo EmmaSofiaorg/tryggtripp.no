@@ -1,8 +1,15 @@
 <template>
   <div class="image-holder">
     <div class="two">
-    <div class="bottom image" :name="bigSrc"></div>
-    <div :style="{ backgroundImage: 'url(' + smallSrc + ')' }" class="top image"></div>
+      <img ref="bigImg"
+           class="bottom image"
+           :src="bigSrc"
+           @load="loaded" />
+      <div class="bottom image"
+           :style="{ backgroundImage: 'url(' + bigSrc + ')' }" />
+      <div ref="smallImg"
+           :style="{ backgroundImage: 'url(' + smallSrc + ')' }"
+           class="top image"></div>
     </div>
   </div>
 </template>
@@ -22,9 +29,17 @@
 
   .top
     background-size: 600px
+    filter: blur(30%)
+
+  .top.--blur
+      opacity: 0
 
   .image
     position: absolute
+    background-size: cover
+    object-fit: cover
+    background-position: center
+    background-repeat: repeat
     width: 100%
     left: 0
     height: inherit
@@ -39,24 +54,14 @@
 </style>
 
 <script>
-
 /* eslint-disable */
 
 export default {
-    props: [
-      'bigSrc',
-      'smallSrc'
-    ],
-    mounted() {
-
-      var vm = this;
-
-      $('<img/>').attr('src', vm.bigSrc).on('load', function() {
-         $(this).remove(); // prevent memory leaks
-         $('.bottom[name="'+ vm.bigSrc +'"]').css('background-image', 'url("'+vm.bigSrc+'")');
-         $('.top').toggleClass("transparent");
-      });
-    },
-  };
-
+  props: ['bigSrc', 'smallSrc'],
+  methods: {
+    loaded() {
+      this.$refs.smallImg.classList.add('--blur')
+    }
+  }
+};
 </script>

@@ -1,8 +1,8 @@
 <template>
   <div>
     <section class="intro">
-      <blurry-image bigSrc="../static/patterns/sopp.png"
-                    smallSrc="../static/patterns/sopp-lowres.png" />
+      <blurry-image bigSrc="..//patterns/sopp.png"
+                    smallSrc="..//patterns/sopp-lowres.png" />
       <div class="faded">
         <div class="container">
           <div class="row align-items-center"
@@ -41,6 +41,7 @@
 
           <div class="row mt-5">
             <div class="col-sm-4 mb-4"
+                 :key="testkit.id"
                  v-for="testkit in testkits">
               <product-card :title="testkit.title"
                             :img="testkit.images[0].src"
