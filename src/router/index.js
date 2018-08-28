@@ -12,6 +12,7 @@ import Sopp from "@/pages/Sopp";
 Vue.use(Router);
 
 const router = new Router({
+  mode: "history",
   routes: [
     {
       path: "/",
