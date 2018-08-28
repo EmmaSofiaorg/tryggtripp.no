@@ -5,6 +5,7 @@ backend:
 publish_mode: editorial_workflow
 media_folder: "img/uploads"
 public_folder: "/img/uploads"
+identity_url: "https://tryggtripp.netlify.com/.netlify/identity"
 
 collections:
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
