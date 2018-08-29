@@ -1,11 +1,11 @@
 backend:
   name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
+  repo: emmasofia/tryggtripp.no
 
 publish_mode: editorial_workflow
-media_folder: "img/uploads"
+media_folder: "/img/uploads"
 public_folder: "/img/uploads"
-identity_url: "https://tryggtripp.netlify.com/.netlify/identity"
 
 collections:
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
