@@ -148,7 +148,7 @@
             </p>
 
             <p>
-              <b>Uskarpt syn, vaglende øyn</b>
+              <b>Uskarpt syn, vaglende øyne</b>
             </p>
 
             <p>
