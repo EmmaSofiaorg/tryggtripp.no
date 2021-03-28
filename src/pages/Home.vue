@@ -2,7 +2,7 @@
   <div class="container animated fadeIn">
     <div class="row align-items-center" style="min-height: 100vh">
       <div class="col-12 text-center inverted">
-        <img src="/img/logo.svg" height="50" class="mb-5 mt-0" />
+        <img src="/img/logo.svg" height="50" class="mb-5 mt-5" />
 
         <h1 class="mb-5 description">
           En skadereduserende veileder for MDMA og psykedelika
