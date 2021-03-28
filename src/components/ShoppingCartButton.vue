@@ -1,11 +1,18 @@
 <template lang="html">
-  <div
+  <!--div
     class="shopping-cart-button"
     v-if="cart && !cartOpen"
     @click="cartOpen = true"
-  >
-    <b class="shopping-cart-text">Testkits ({{ cart.lineItemCount }})</b>
-    <i class="fa fa-shopping-cart text-center ml-2 mr-2" aria-hidden="true"></i>
+  -->
+  <div class="shopping-cart-button">
+    <a target="_blank" href="https://www.testkitsnorge.no/">
+      <!--b class="shopping-cart-text">Testkits ({{ cart.lineItemCount }})</b-->
+      <b class="shopping-cart-text">Testkits</b>
+      <i
+        class="fa fa-shopping-cart text-center ml-2 mr-2"
+        aria-hidden="true"
+      ></i>
+    </a>
   </div>
 </template>
 
@@ -17,7 +24,6 @@ export default {
 
 <style lang="scss">
 .shopping-cart-button {
-  display: none;
   position: fixed;
   top: 15vh;
   right: 0px;

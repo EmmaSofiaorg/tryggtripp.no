@@ -28,14 +28,6 @@
                 >Psilocybin</router-link
               >
             </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                target="_blank"
-                href="https://www.testkitsnorge.no/"
-                >Testkits</a
-              >
-            </li>
           </ul>
         </div>
       </div>
