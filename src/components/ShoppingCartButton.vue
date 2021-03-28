@@ -1,10 +1,12 @@
 <template lang="html">
-
-  <div class="shopping-cart-button" v-if="cart && !cartOpen" @click="cartOpen = true">
-    <b class="shopping-cart-text">Testkits ({{cart.lineItemCount}})</b>
+  <div
+    class="shopping-cart-button"
+    v-if="cart && !cartOpen"
+    @click="cartOpen = true"
+  >
+    <b class="shopping-cart-text">Testkits ({{ cart.lineItemCount }})</b>
     <i class="fa fa-shopping-cart text-center ml-2 mr-2" aria-hidden="true"></i>
   </div>
-
 </template>
 
 <script>
@@ -15,6 +17,7 @@ export default {
 
 <style lang="scss">
 .shopping-cart-button {
+  display: none;
   position: fixed;
   top: 15vh;
   right: 0px;

@@ -1,22 +1,21 @@
 <template>
-
   <div class="container animated fadeIn">
-    <div class="row align-items-center"
-         style="min-height: 100vh">
+    <div class="row align-items-center" style="min-height: 100vh">
       <div class="col-12 text-center inverted">
+        <img src="/img/logo.png" height="120" class="mb-5 mt-0" />
 
-        <img src="/img/logo.png"
-             height="90"
-             class="mb-5 mt-0" />
-
-        <h1 class="mb-5 description">En skadereduserende veileder for MDMA og psykedelika</h1>
+        <h1 class="mb-5 description">
+          En skadereduserende veileder for MDMA og psykedelika
+        </h1>
         <h4 class="mb-4">Velg et rusmiddel:</h4>
         <div class="row">
           <div class="col-12 col-sm-4">
             <router-link to="/guide/mdma">
               <div class="SquaredBox">
-                <blurry-image bigSrc="/patterns/mdma.jpg"
-                              smallSrc="/patterns/mdma-lowres.jpg" />
+                <blurry-image
+                  bigSrc="/patterns/mdma.jpg"
+                  smallSrc="/patterns/mdma-lowres.jpg"
+                />
                 <div class="faded">
                   MDMA
                 </div>
@@ -26,8 +25,10 @@
           <div class="col-12 col-sm-4">
             <router-link to="/guide/lsd">
               <div class="SquaredBox">
-                <blurry-image bigSrc="/patterns/lsd.jpg"
-                              smallSrc="/patterns/lsd-lowres.jpg" />
+                <blurry-image
+                  bigSrc="/patterns/lsd.jpg"
+                  smallSrc="/patterns/lsd-lowres.jpg"
+                />
                 <div class="faded">
                   LSD
                 </div>
@@ -37,8 +38,10 @@
           <div class="col-12 col-sm-4">
             <router-link to="/guide/psilosybin">
               <div class="SquaredBox sopp">
-                <blurry-image bigSrc="/patterns/sopp.png"
-                              smallSrc="/patterns/sopp-lowres.png" />
+                <blurry-image
+                  bigSrc="/patterns/sopp.png"
+                  smallSrc="/patterns/sopp-lowres.png"
+                />
                 <div class="faded">
                   Psilocybin
                 </div>
@@ -49,7 +52,6 @@
       </div>
     </div>
   </div>
-
 </template>
 
 <script>
@@ -95,5 +97,4 @@ a:hover
 .SquaredBox .faded:hover
   background: rgba(0, 0, 0, 0.2)
   transition: 0.2s
-
 </style>
